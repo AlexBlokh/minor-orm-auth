@@ -1,0 +1,19 @@
+POST http://localhost:3000/signup HTTP/1.1
+content-type: application/json
+
+{
+    "email": "aleksandrblokh@gmail.com",
+    "password": "lambdapass"
+}
+
+### Login
+POST http://localhost:3000/login?email=aleksandrblokh@gmail.com&password=lambdapass
+
+### Refresh Token
+POST http://localhost:3000/refresh
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MjU0MDA5NjIsInN1YiI6InJlZnJlc2giLCJqdGkiOiI4NjQ0ZGY0OC05OTk3LTQ2NTItOWJlYy0yNTgwZWM2N2I1Y2IifQ.f0r1ukKvFnYywg2YhvzdXumO6U6aPHMgnr-P-CqEnEE
+X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhbGVrc2FuZHJibG9raEBnbWFpbC5jb20iLCJpYXQiOjE2MjU0MDIzODcsImV4cCI6MTYyNTQwMjQ0NCwic3ViIjoiYWNjZXNzIiwianRpIjoiODY0NGRmNDgtOTk5Ny00NjUyLTliZWMtMjU4MGVjNjdiNWNiIn0.3ledXWyMUkiHmvlguYywgEyTh5-Yo6CTjncVJM81pWU
+
+### Data
+GET http://localhost:3000/me1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhbGVrc2FuZHJibG9raEBnbWFpbC5jb20iLCJpYXQiOjE2MjU0MDIzODcsImV4cCI6MTYyNTQwMjQ0NCwic3ViIjoiYWNjZXNzIiwianRpIjoiODY0NGRmNDgtOTk5Ny00NjUyLTliZWMtMjU4MGVjNjdiNWNiIn0.3ledXWyMUkiHmvlguYywgEyTh5-Yo6CTjncVJM81pWU

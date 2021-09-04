@@ -1,0 +1,49 @@
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "*": ["src/*"]
+//     },
+//     "target": "es2017",
+//     // "lib": ["esnext"],
+//     // "allowJs": false,
+//     // "skipLibCheck": false,
+//     // "esModuleInterop": true,
+//     // "allowSyntheticDefaultImports": true,
+//     // "strict": true,
+//     // "forceConsistentCasingInFileNames": true,
+//     // "module": "commonjs",
+//     // "moduleResolution": "node",
+//     // "resolveJsonModule": true,
+//     // "isolatedModules": true,
+//     "outDir": "./build"
+//   },
+//   "include": ["./src"],
+//   // "exclude": [
+//     // "./node_modules",
+//     // "./build"
+//   // ],
+//   "typeRoots": [
+//     "./node_modules",
+//     "./src/types"
+//   ]
+// }
+
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "./build",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./build", "node_modules", "./dist"]
+}

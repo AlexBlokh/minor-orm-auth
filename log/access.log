@@ -1,0 +1,1 @@
+::ffff:127.0.0.1 - - [21/Jul/2021:13:41:10 +0000] "POST /login?email=aleksandrblokh@gmail.com&password=lambdapass HTTP/1.1" 200 487 "-" "vscode-restclient"
